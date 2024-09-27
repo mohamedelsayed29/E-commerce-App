@@ -1,0 +1,178 @@
+{
+    "navbar":{
+        "home":"Home",
+        "product":"Product" ,
+        "categories":"Catecories",
+        "brands":"Brands",
+        "cart":"Cart",
+        "wish":"Wish" ,
+        "lang":"Lang"
+    },
+
+  
+        "footer":{
+             "Get The E-Commerce App":"Get The E-Commerce App ",
+             "Email":"Email",
+             "Share App Link":"Share App Link",
+          " We Will Send You a Link, Open it on Your Phone to download the app" :
+          " We Will Send You a Link, Open it on Your Phone to Download The App",
+          "Get Deliveries with E-Commerce App":"Get Deliveries with E-Commerce App " ,
+          "Payment partners":"Payment Partners"
+        },
+
+        
+            "login":{
+                  "loginNow :" : "loginNow :",
+                 "email":"Email",
+                 "MsgError()":"incorrect email or password",
+                 "Email is Required":"Email Is Required",
+                 "Enter valid Email":"Enter Valid Email",
+                 "password":"Password",
+                 "password is Required":"Password Is Required",
+                 "Enter valid password":"Enter Valid Password",
+                 "Forgotten password?":"Forgotten Password?",
+                 "login":"Login",
+                 "Done":"Done"
+              
+            },
+
+              "register":{
+                "RegisterNow :" : "RegisterNow :",
+                "name":"Name",
+                "Name Is Required":"Name Is Required",
+                "Name Should be more than or equal 4 chars":
+                "Name Should be more than or equal 4 chars",
+                "Name Should be less than or equal 15 chars":
+                "Name Should be less than or equal 15 chars",
+                "email":"email",
+                "Email is Required":"Email is Required",
+                "Enter valid Email":"Enter valid Email",
+                "password":"password",
+                "password is Required":"password is Required",
+                "Enter valid password":"Enter valid password",
+                "repassword":"repassword",
+                "password confirmation is incorrect":
+                "password confirmation is incorrect",
+                "phone":"phone",
+                "phone is Required":"phone is Required",
+                "Enter valid phone":"Enter valid phone",
+                "MsgError()":"Account Already Exists",
+                "Register":"Register",
+                "Done":"Done"
+               
+              },
+
+
+              "authnav":{
+                "Login":"Login",
+                "register":"register",
+                "EN":"English",
+                "AR":"Arabic"
+            },
+               
+
+            "forgetpassword":{
+                     "Forget Password":"Forget Password",
+                      "email":"Email",
+                      "Email is Required":"Email Is Required",
+                      "Enter valid Email":"Enter Valid Email",
+                      "verifyemail":"verifyemail",
+                      "resetCode":"ResetCode",
+                      "resetCode is Required":"ResetCode Is Required",
+                      "Enter valid resetCode":"Enter Valid ResetCode",
+                      "verifycode":"verifycode",
+                      "newPassword":"NewPassword",
+                      "newPassword is Required ":"NewPassword Is Required ",
+                      "Enter valid newPassword":"Enter Valid NewPassword",
+                      "resetpassword":"resetpassword"
+                     
+
+                           },
+
+             "home":{
+                "Popular Categories":"Popular Categories",
+                    "+ Add":"+ Add",
+                    "Search by Name":"Search By Name"
+             }, 
+
+             "details":{
+                "Details Product":"Details Product",
+                   "description:":"Description:",
+                   "category:":"Category:",
+                   "brand:":"Brand:",
+                   "quantity:":"Quantity:",
+                    "+ Add":"+ Add"
+    
+                  },
+                  
+                             "brand":{
+                                        "Name:":"Name:",
+                                        "Slug:":"Slug:"
+                                       },
+
+                                       
+                             "infocategory":{
+                                "Name:":"Name:",
+                                "Slug:":"Slug:"
+                               },
+
+
+                               "wish":{
+                                "Wish List":"Wish List",
+                                "your Wish List is empty":"your Whish List is empty",
+                                "Remove":"Remove",
+                                "Add To Cart":"Add To Cart",
+                                "price:":"price:"
+                            
+                               },
+                               "product":{
+                             "+ Add":"+ Add"
+                               },   
+
+
+
+                               "cart":{
+                                   "your Cart is empty":"your Cart is empty",
+                                   "Cart Shop":"Cart Shop",
+                                   "Clear Cart":"Clear Cart",
+                                   "Total Price:":"Total Price:",
+                                   "price:":"price:",
+                                   "total number of items:":"total number of items:",
+                                   "Remove":"Remove",
+                                   "Order":"Order"
+                                 
+                               } ,
+
+
+
+
+                               "order":{
+                                "Address":"Address",
+                                "details":"details",
+                                "details is Required":"details is Required",
+                                "phone":"phone",
+                                "phone is Required":"phone is Required",
+                                "Enter valid phone":"Enter valid phone",
+                                "city":"city",
+                                "city is Required":"city is Required",
+                                "Pay Now":"Pay Now"
+                               },
+
+                               "allorders":{
+                                "All Orders":"All Orders",
+                                "Name:":"Name:",
+                                "Phone:":"Phone:",
+                                "Pay Type:":"Pay Type:",
+                                "Total Price:":"Total Price:",
+                                "IsPaid:":"IsPaid:",
+                                "Id:":"Id:",
+                                "Created At:":"Created At:"
+                            
+                               }
+
+
+
+  } 
+
+
+ 

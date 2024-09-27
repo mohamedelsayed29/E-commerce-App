@@ -1,0 +1,54 @@
+<section class="my-5  pt-5" >
+    <h2>Product :</h2>
+
+    <div class="justify-content-center align-items-center d-flex">
+        <i class="fa-solid fa-magnifying-glass m-2 cr">  </i>
+        <input [(ngModel)]="test" type="search" placeholder="search by Name....." class="form-control w-50 m my-3">
+
+    </div>
+    <div class="row g-3">
+     @for (product of productList() |search:test()   ; track product.id) {
+      <div class="col-md-4 col-lg-3">
+              <div class="all p-2  position-relative " >
+            
+                <div [routerLink]="['/details',product.id]"> 
+                
+                    <img [src]="product.imageCover" class="w-100 " [alt]="product.title">
+          
+               
+                    <h6 class="  text-main pt-1">{{product.category.name|titlecase}}</h6>
+                    <h2 class="small fs-6">{{product.title.split(" ",2).join(" ") }}</h2>
+                         
+                  <div class="d-flex justify-content-between align-content-center">
+                      <span>{{product.price |currency:'GBP'}} </span>
+                      <div>
+                        @for ( num of [1,2,3,4,5].slice(0,product.ratingsAverage );track $index ) {
+  
+                         <span><i class="fa-solid fa-star rating-color "></i> </span>
+                        }
+                        @if (product.ratingsAverage %1 !== 0) {
+                         <span><i class="fa-solid fa-star-half-stroke rating-color"></i></span>
+                        }
+                             
+                          <span class="text-muted">{{product.ratingsAverage}}</span>
+                      </div>
+                  </div>
+                </div>
+             
+                <div class="d-flex align-content-center justify-content-center mt-2 " >
+             
+                    <button class="btn-main  w-75" (click)="addcart(product.id)">{{"product.+ Add"|translate}} </button>
+                </div>
+
+               
+                  
+               </div>
+        
+    
+      </div>
+     }
+  </div>
+  
+  
+  </section>
+  

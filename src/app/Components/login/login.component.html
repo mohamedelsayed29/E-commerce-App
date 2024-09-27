@@ -1,0 +1,94 @@
+<section class="bg-main-light shadow p-2 my-2 rounded-4">
+    <h1 class="h2 text-black fw-bolder">Login Now :</h1>
+    <form [formGroup]="loginForm" (ngSubmit)="loginSubmit()" >
+
+        <div class="my-2">
+            <label for="email">email</label>
+            <input 
+            [ngClass]="{
+                'is-valid': loginForm.get('email')?.errors && loginForm.get('email')?.touched,
+                'is-invalid': loginForm.get('email')?.errors && loginForm.get('email')?.touched
+            }"
+
+
+             id="email" type="email"  class="form-control" formControlName="email">
+            @if (loginForm.get('email')?.errors && loginForm.get('email')?.touched) 
+            {
+                <div class="w-100 alert alert-danger mt-2">
+                    @if (loginForm.get('email')?.getError('required')) 
+                    {
+                        <p class="m-0">Email Is Required</p>
+
+                    }
+                    @else if (loginForm.get('email')?.getError('email'))
+                    {
+                        <p class="m-0">Enter Valid Email</p>
+
+                    }
+                </div>
+            }
+        </div>
+
+
+        <div class="my-2">
+            <label for="password">password</label>
+            <input 
+            
+            [ngClass]="{
+                'is-valid': loginForm.get('password')?.errors && loginForm.get('password')?.touched,
+                'is-invalid': loginForm.get('password')?.errors && loginForm.get('password')?.touched
+            }"
+            
+            id="password" type="password"  class="form-control" formControlName="password">
+            @if (loginForm.get('password')?.errors && loginForm.get('password')?.touched) 
+            {
+                <div class="w-100 alert alert-danger mt-2">
+                    @if (loginForm.get('password')?.getError('required')) 
+                    {
+                        <p class="m-0">password Is Required</p>
+
+                    }
+                    @else if (loginForm.get('password')?.getError('pattern'))
+                    {
+                        <p class="m-0">Enter Valid password</p>
+
+                    }
+                </div>
+                
+            }
+        </div>
+        <div class="d-flex align-items-center justify-content-end gap-4">
+            <a routerLink="/forgot" class="link-primary">Forgot your password ?</a>
+            <button (click)="loginSubmit()" type="submit" class="btn-main" [disabled]="loginForm.invalid">login
+                @if (isLoading)
+                 {
+                    <span><i class="fas fa-spin fa-spinner"></i></span>
+        
+                 }
+            </button>
+                <!-- @if (msgSuccess)
+                {
+                   <p class="alert alert-success m-0 w-100 pt-4 mt-2">Success</p>
+                }
+                @if (msgError)
+                {
+                   <p class="alert alert-danger m-0 w-100 pt-4 mt-2">{{msgError}}</p>
+           
+                } -->
+        </div>
+        <div class="">
+            @if (msgSuccess)
+            {
+               <p class="alert alert-success m-0 w-100 pt-4 mt-2">Success</p>
+            }
+            @if (msgError)
+            {
+               <p class="alert alert-danger m-0 w-100 pt-4 mt-2">{{msgError}}</p>
+       
+            }
+        </div>
+    </form>
+
+    
+</section>
+

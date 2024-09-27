@@ -1,0 +1,103 @@
+<section>
+    <div class="row g-0">
+        <div class="col-md-10">
+            <div>
+
+                <owl-carousel-o [options]="customOptionsMain">
+                    <ng-template carouselSlide>
+                        <img src="../../../assets/images/img1.avif" height="300px" class="w-100" alt="">  
+                    </ng-template>  
+                    <ng-template carouselSlide>
+                        <img src="../../../assets/images/img2.avif" height="300px" class="w-100" alt="">  
+                    </ng-template>  
+                    <ng-template carouselSlide>
+                        <img src="../../../assets/images/img3.avif" height="300px" class="w-100" alt="">  
+                    </ng-template>  
+                    <ng-template carouselSlide>
+                        <img src="../../../assets/images/img4.avif" height="300px" class="w-100" alt="">  
+                    </ng-template>  
+                    <ng-template carouselSlide>
+                        <img src="../../../assets/images/img5.avif" height="300px" class="w-100" alt="">  
+                    </ng-template>  
+                    <ng-template carouselSlide>
+                        <img src="../../../assets/images/img6.avif" height="300px" class="w-100" alt="">  
+                    </ng-template>  
+                    <ng-template carouselSlide>
+                        <img src="../../../assets/images/img7.avif" height="300px" class="w-100" alt="">  
+                    </ng-template>  
+                  </owl-carousel-o>
+
+
+                
+
+            </div>
+        </div>
+
+        <div class="col-md-2">
+            <div>
+                <img src="./assets/images/slider-image-2.jpeg" height="150px" class="w-100" alt="">
+                <img src="./assets/images/slider-image-3.jpeg" height="150px" class="w-100" alt="">
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- Categories -->
+<section class="my-2">
+    <h2>Popular Categories</h2>
+
+    <owl-carousel-o [options]="customOptionsCat">
+        @for (cat of categoriesList; track cat._id) {
+            <ng-template carouselSlide >
+                <div>
+                    <img [src]="cat.image" height="250px" class="w-100" [alt]="cat.name">
+                    <h3 class="h6 text-main"> {{cat.name}} </h3>
+                </div>
+            </ng-template>
+        }
+      </owl-carousel-o>
+</section>
+
+<!-- Product -->
+<section>
+    <div class="justify-content-center align-items-center d-flex">
+        <i class="fa-solid fa-magnifying-glass m-2 cr">  </i>
+        <input [(ngModel)]="text" type="search" placeholder="search by Name....." class="form-control w-50 m my-3">
+
+    </div>
+    <div class="row g-3">
+
+        @for (product of productList.slice(0,12) | search : text ; track product.id) {
+            <div class="col-md-2">
+                <div class="product p-2"  >
+
+                    <div [routerLink]="['/details', product.id ]">
+                        <img [src]="product.imageCover" class="w-100" [alt]="product.title">
+                        <h3 class="small text-main">{{product.category.name | uppercase }}</h3>
+                        <h4 class="h6">{{product.title.split(" ",2).join(" ")}}</h4>
+        
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="fw-bold">{{product.price}} EGP</span>
+                            <div>
+                                @for (num of [1,2,3,4,5].slice(0, product.ratingsAverage ); track $index) {
+                                    <span> <i class="fas fa-star rating-color"></i> </span>
+                                }
+    
+                                @if (product.ratingsAverage % 1 !== 0) {
+                                    <i class="fa-solid fa-star-half-stroke rating-color"></i>
+                                }
+    
+                                <!-- <span> <i class="fas fa-star rating-color"></i> </span> -->
+                                <span class="text-muted"> {{product.ratingsAverage}} </span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn-main w-100" (click)="addCart(product.id)"> <i class="fa-solid fa-cart-plus"></i>{{"product.+ Add"|translate}}</button>
+
+                </div>
+            </div>
+
+        }
+
+    </div>
+</section>

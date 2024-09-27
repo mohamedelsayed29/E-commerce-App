@@ -1,0 +1,12 @@
+<section  class="my-5 py-5 " >
+    <div class="row  ">
+        <div class="col-md-3">
+            <img [src]="infoCategory().image" class="w-100" [alt]="infoCategory().name">
+        </div>
+        <div class="col-md-9 d-flex   flex-column  justify-content-center  align-items-start">
+              <h4 class="text-main" ><strong>{{"infocategory.Name:"|translate}} </strong>{{infoCategory().name}}</h4>
+              <h5><strong>{{"infocategory.Slug:"|translate}}</strong> {{infoCategory().slug}}</h5>
+            
+        </div>
+    </div>
+</section>  

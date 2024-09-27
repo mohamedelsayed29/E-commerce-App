@@ -1,0 +1,11 @@
+<section  class="my-5 p-3  mx-auto w-75" >
+    <div class="row">
+        <div class="col-md-3 ">
+            <img [src]="infobrands().image" [alt]="infobrands().name">
+        </div>
+        <div class="col-md-9 d-flex flex-column  justify-content-center align-items-center">
+              <h4 class="text-main" ><strong>{{"brand.Name:"|translate}} </strong>{{infobrands().name}}</h4>
+              <h5><strong>{{"brand.Slug:"|translate}}</strong> {{infobrands().slug}}</h5>
+        </div>
+    </div>
+</section>  

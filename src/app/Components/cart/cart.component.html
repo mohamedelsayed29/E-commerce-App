@@ -1,0 +1,33 @@
+<section class="bg-main-light rounded-4 shadow p-4 my-2 w-75 mx-auto">
+    <div class="d-flex align-items-center justify-content-between">
+        <h1 class="h2 text-center fw-bolder">Shop Cart :</h1>
+        <button (click)="clearItems()" class="btn btn-outline-danger btn-sm">Clear Cart</button>
+    </div>
+    <p class="text-danger">Total Cart Price : {{cartDetails.totalCartPrice | currency : 'GBP'}} </p>
+
+    @for (item of cartDetails.products ; track item.product.id) {
+        <div class="row mb-2 border-bottom">
+            <!-- img -->
+            <div class="col-md-1">
+                <div>
+                    <img [src]="item.product.imageCover" class="w-100" [alt]="item.product.title">
+                </div>
+            </div>
+            <!-- info -->
+            <div class="col-md-11 d-flex align-items-center justify-content-between">
+                <div>
+                    <h3 class="h5" > {{item.product.title}} </h3>
+                    <p class="text-main " >Price : {{item.price}} </p>
+                    <button (click)="removeItem(item.product.id)" class="text-danger btn p-0 cr" > <i class="fa-solid fa-trash"></i> </button>
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                    <span (click)="ubdateCount(item.product.id , item.count + 1 )" class="text-main cr"><i class="fa-solid fa-square-plus fa-2xl"></i></span>
+                    <span> {{item.count}} </span>
+                    <span (click)="ubdateCount(item.product.id , item.count - 1 )" class="text-main cr"><i class="fa-solid fa-square-minus fa-2xl"></i></span>
+                </div>
+            </div>
+        </div>
+    }
+
+    <button [routerLink]="['/orders', cartDetails._id]" class="btn-main mt-2" >Orders</button>
+</section>

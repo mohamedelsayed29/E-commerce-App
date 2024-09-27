@@ -1,0 +1,15 @@
+<section  class=" mx-auto my-5  ">
+    <div class="row g-3 my-5 py-5 ">   
+        @for (brand of brandsData(); track brand._id) {
+            <div class="col-md-4 col-lg-3">  
+                <div class="all border cr " >
+                     <div   [routerLink]="['/infoBrand',brand._id]"   >
+                      <img [src]="brand.image" class="w-100" [alt]="brand.name"  >
+                      <h4 class="text-main fw-bold p-2 text-center cr">{{brand.name}}</h4>
+                       </div>
+                     </div>
+                  
+                    </div>
+        }
+    </div>
+    </section>  

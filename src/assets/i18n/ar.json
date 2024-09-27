@@ -1,0 +1,166 @@
+{
+    "navbar":{
+        "home":"الرئسية",
+        "product":"المنتجات" ,
+        "categories":"الأقسام",
+        "brands":"العلامات التجارية ",
+        "cart":"عربة مشتريات",
+        "wish":"الرغبات" ,
+        "lang":"غ"
+    },
+
+    "footer":{
+        "Get The E-Commerce App":" احصل على تطبيق E-Commerce",
+        "Email":"البريد الإلكتروني" ,
+        "Share App Link":"مشاركة رابط التطبيق",
+     " We Will Send You a Link, Open it on Your Phone to download the app" :"سنرسل لك رابطاً على هاتفك لتحميل التطبيق",
+     "Get Deliveries with E-Commerce App":"احصل على التسليمات باستخدام تطبيق E-Commerce" ,
+     "Payment partners":"شركات الدفع"
+   },
+
+   "login":{
+    "loginNow:" : "تسجيل الدخول الآن:",
+    "MsgError()":"البريد الإلكتروني أو كلمة المرور غير صحيحة",
+   "email":"  البريد الإلكتروني " ,
+    "Email is Required":"البريد الإلكتروني مطلوب ",
+    "Enter valid Email":"أدخل بريد إلكتروني صحيح",
+    "password":"كلمه المرور",
+    "password is Required":" كلمة المرور مطلوبة ",
+    "Enter valid password":"أدخل كلمة مرور صالحة",
+    "Forgotten password?":"هل نسيت كلمة المرو؟",
+    "login":"تسجيل الدخول",
+    "Done":"تم"
+   },
+
+   "register":{
+     "RegisterNow :" : "سجل الآن :",
+     "name":"الاسم ",
+     "Name Is Required":"الاسم مطلوب",
+     "Name Should be more than or equal 4 chars":
+     "يجب أن يكون الاسم أكثر من أو يساوي 4 أحرف",
+     "Name Should be less than or equal 15 chars":
+     "يجب أن يكون الاسم أقل من أو يساوي 15 حرفا",
+     "email":"البريد الإلكتروني",
+     "Email is Required":"البريد الإلكتروني مطلوب",
+     "Enter valid Email":"أدخل بريد إلكتروني صحيح",
+     "password":"كلمه المرور ",
+     "password is Required":"كلمة المرور مطلوبة",
+     "Enter valid password":"أدخل كلمة مرور صالحة",
+     "repassword":"إعادة كلمة المرور",
+     "password confirmation is incorrect":
+     "تأكيد كلمة المرور غير صحيح",
+     "phone":"الهاتف",
+     "phone is Required":"الهاتف مطلوب",
+     "Enter valid phone":"أدخل رقم هاتف صحيح",
+     "MsgError()":"الحساب موجود بالفعل",
+     "Register":"تسجيل",
+     "Done":"تم"
+    
+   },
+   
+            "authnav":{
+                "Login":"تسجيل الدخول",
+                "register":" تسجيل",
+                "EN":" اللغة الإنجليزية ",
+                "AR":"اللغه العربيه"
+            },
+            
+            "forgetpassword":{
+                     "Forget Password":"نسيت كلمة المرور",
+                      "email":"البريد الإلكتروني",
+                      "Email is Required":"البريد الإلكتروني مطلوب",
+                      "Enter valid Email":"أدخل بريد إلكتروني صحيح",
+                      "verifyemail":"التحقق من البريد الإلكتروني",
+                      "resetCode":"إعادة تعيين الرمز",
+                      "resetCode is Required":"مطلوب إعادة تعيين الرمز",
+                      "Enter valid resetCode":"أدخل رمز إعادة تعيين صالح",
+                      "verifycode":"تحقق من الرمز",
+                      "newPassword":"كلمة المرور الجديدة",
+                      "newPassword is Required ":"كلمة المرور الجديدة مطلوبة ",
+                      "Enter valid newPassword":"أدخل كلمة مرور جديدة صالحة",
+                      "resetpassword":"إعادة تعيين كلمة المرور"
+                    
+                           },
+
+                           "home":{
+                                "Popular Categories":"الفئات الشعبية",
+                                "+ Add":"+ إضافة",
+                                "Search by Name":"بحث بواسطة الاسم"
+                               },
+
+
+                               "details":{
+                                     "Details Product" : "تفاصيل المنتج "  ,
+                                   
+                                     "description:":"الوصف:",
+                                     "category:":"الفئه:",
+                                     "brand:":"العلامه التجاريه:",
+                                     "quantity:":"الكميه:",
+                                        "+ Add":"+ إضافة"
+                                       },
+                                       "brand":{
+                                        "Name:":"اسم:",
+                                        "Slug:":"نوع:"
+                                       }
+                                       ,
+                                       "infocategory":{
+                                        "Name:":"اسم:",
+                                        "Slug:":"نوع:"
+                                       },
+
+                                       "wish":{
+                                        "Wish List":"قائمة الرغبات",
+                                        "your Wish List is empty":"قائمة الرغبات فارغة",
+                                        "Remove":"ازاله",
+                                        "Add To Cart":"إضافة إلى العربة",
+                                    
+                                        "price:":"السعر:"
+                                    
+                                       },
+                                       "product":{
+                                        "+ Add":"+ إضافة"
+                                       },
+
+
+                                       
+                               "cart":{
+                                "your Cart is empty":"عربة التسوق فارغة",
+                                "Cart Shop":"عربه التسوق",
+                                "Clear Cart":"مسح العربه",
+                                "Total Price:":"السعر الإجمالي:",
+                                "price:":"السعر: ",
+                                "total number of items:":"إجمالي عدد العناصر:",
+                                "Remove":"ازاله",
+                                "Order":"طلب"
+                              
+                            },
+
+                            
+                            "order":{
+                                "Address":"عنوان",
+                                "details":"التفاصيل",
+                                "details is Required":"التفاصيل مطلوبة ",
+                                "phone":"الهاتف",
+                                "phone is Required":" الهاتف مطلوب ",
+                                "Enter valid phone":"أدخل رقم هاتف صحيح",
+                                "city":"مدينة",
+                                "city is Required":"المدينة مطلوبة ",
+                                "Pay Now":"ادفع الآن"
+                               } ,
+
+
+                               "allorders":{
+                                "All Orders":"جميع الطلبات",
+                                "Name:":"اسم:",
+                                "Phone:":"الهاتف:",
+                                "Pay Type:":"نوع الدفع:",
+                                "Total Price:":"السعر الإجمالي:",
+                                "IsPaid:":"تم الدفع:",
+                                "Id:":"الهويه:",
+                                "Created At:":"تم إنشاؤه في:"
+                            
+                               }
+
+
+
+}
